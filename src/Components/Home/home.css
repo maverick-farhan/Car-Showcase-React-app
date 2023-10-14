@@ -1,0 +1,105 @@
+:root {
+  --primaryColor:#001524;
+  --secondaryColor:#ebe8fc;
+  --textColor:#a3a3a3;
+  --greyColor:#f4f4f4;
+  --whiteColor:#f5f4f4;
+  --blackColor:#434344;
+}
+
+.home {
+  padding-top: 8rem;
+}
+
+.secContainer {
+  padding: 0 1.5rem;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+}
+.secContainer .homeText .homeSpan {
+  font-size: 17px;
+  color: var(--blackColor);
+  font-weight: 400;
+}
+.secContainer .homeText .homeTitle {
+  color: var(--blackColor);
+  font-weight: 700;
+  font-size: 30px;
+}
+.secContainer .homeText .btn-group {
+  gap: 1.5rem;
+  justify-content: center;
+}
+.secContainer .homeText .btn-group .btn {
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 600;
+  color: var(--blackColor);
+  margin-top: 0.5rem;
+  font-size: 12px;
+}
+.secContainer .homeText .btn-group .custom {
+  text-decoration: underline;
+}
+.secContainer .homeText .btn-group .primaryBtn {
+  color: var(--whiteColor);
+}
+.secContainer .homeText .btn-group .primaryBtn:hover {
+  color: var(--blackColor);
+  border: 1px solid #111;
+}
+.secContainer .homeImage {
+  margin: auto;
+}
+
+@media screen and (min-width: 520px) {
+  .home .secContainer .homeText .homeSpan {
+    font-size: 18px;
+  }
+  .home .secContainer .homeText .homeTitle {
+    font-size: 35px;
+  }
+  .home .secContainer .homeText .btn-group .btn {
+    font-size: 14px;
+  }
+  .home .secContainer .homeImage {
+    max-width: 85%;
+    transition: 0.3s ease;
+  }
+}
+@media screen and (min-width: 770px) {
+  .home {
+    padding-top: 10rem;
+  }
+  .home .secContainer {
+    gap: 2.4rem;
+  }
+  .home .secContainer .homeText .homeSpan {
+    font-size: 21px;
+  }
+  .home .secContainer .homeText .homeTitle {
+    font-size: 45px;
+  }
+  .home .secContainer .homeText .btn-group {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 996px) {
+  .home {
+    padding-top: 12rem;
+  }
+  .home .secContainer {
+    gap: 3rem;
+  }
+  .home .secContainer .homeText .homeSpan {
+    font-size: 25px;
+  }
+  .home .secContainer .homeText .homeTitle {
+    font-size: 55px;
+  }
+  .home .secContainer .homeText .btn-group .btn {
+    font-size: 16px;
+    padding: 1rem 2rem;
+  }
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,173 @@
+:root {
+  --primaryColor:#001524;
+  --secondaryColor:#ebe8fc;
+  --textColor:#a3a3a3;
+  --greyColor:#f4f4f4;
+  --whiteColor:#f5f4f4;
+  --blackColor:#434344;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 6px rgb(237, 237, 237);
+  z-index: 1000;
+}
+.header .logoDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logoDiv .logo {
+  width: 35px;
+  margin-right: 5px;
+}
+.header .logoDiv h1.brand {
+  color: #222;
+}
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    position: absolute;
+    background-color: var(--secondaryColor);
+    width: 80%;
+    top: -100rem;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    transition: 0.3s ease;
+    z-index: 2000;
+  }
+  .header .navbar .closeIcon {
+    position: absolute;
+    bottom: -15px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    padding: 3px;
+    border-radius: 50%;
+    font-size: 35px;
+  }
+  .header .navbar .closeIcon :hover {
+    color: rgb(151, 0, 0);
+  }
+  .header .menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .menu .list {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .header .menu .list a {
+    font-size: 15px;
+  }
+  .header .menu .list:hover {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    transition: 0.3s ease;
+  }
+  .header .menu .list:hover a {
+    color: var(--whiteColor);
+  }
+}
+.header .signup {
+  gap: 0.5rem;
+}
+.header .signup .text {
+  padding: 3px 10px;
+  background-color: var(--primaryColor);
+  border-radius: 3px;
+  color: var(--whiteColor);
+  cursor: pointer;
+  font-size: 14px;
+}
+.header .signup .text:hover {
+  background-color: var(--secondaryColor);
+  color: var(--blackColor);
+}
+.header .signup .openIcon {
+  background-color: none;
+  color: var(--primaryColor);
+  font-weight: 600;
+  font-size: 25px;
+}
+.header .showNavbar {
+  top: 6rem;
+  transition: 0.5s ease;
+}
+
+.addBg {
+  background-color: var(--secondaryColor);
+  box-shadow: none;
+}
+
+@media screen and (min-width: 520px) {
+  .header .logoDiv img.logo {
+    width: 50px;
+  }
+  .header .signup .text {
+    padding: 4px 6px;
+    font-size: 16px;
+  }
+  .header .signup .toggleNavbarIcon {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 770px) {
+  .header .navbar .closeIcon {
+    display: none;
+  }
+  .header .navbar .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .header .navbar .menu .list {
+    padding: 0.3rem 1rem;
+    border-radius: 3px;
+  }
+  .header .navbar .menu .list a {
+    color: var(--primaryColor);
+    font-size: 15px;
+  }
+  .header .navbar .menu .list:hover {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    transition: 0.3s ease;
+  }
+  .header .navbar .menu .list:hover a {
+    color: var(--whiteColor);
+  }
+  .header .signup .text {
+    padding: 6px 10px;
+  }
+  .header .signup .openIcon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1064) {
+  .header {
+    padding: 2rem 7rem;
+  }
+  .header .navbar .menu .list a {
+    font-size: 17px;
+  }
+  .header .navbar .signup .text {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header .navbar .menu .list {
+    margin: 0 0.7rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */

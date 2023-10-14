@@ -1,0 +1,122 @@
+:root{
+    --primaryColor:#001524;
+    --secondaryColor:#ebe8fc;
+    --textColor:#a3a3a3;
+    --greyColor:#f4f4f4;
+    --whiteColor:#f5f4f4;
+    --blackColor:#434344;
+}
+.home{
+    padding-top:8rem;
+}
+.secContainer{
+    padding:0 1.5rem;
+    text-align:center;
+    display:grid;
+    gap:2rem;
+    .homeText{
+        .homeSpan{
+            font-size:17px;
+            color:var(--blackColor);
+            font-weight:400;
+            
+        }
+        .homeTitle{
+            color:var(--blackColor);
+            font-weight:700;
+            font-size:30px;
+
+        }
+        .btn-group{
+            gap:1.5rem;
+            justify-content: center;
+            .btn{
+                padding:10px 15px;
+                border-radius: 3px ;
+                font-size: 600;
+                color:var(--blackColor);
+                margin-top:0.5rem;
+                font-size:12px;
+            }
+            .custom{
+                text-decoration: underline;
+            }
+            .primaryBtn{
+                color:var(--whiteColor);
+                &:hover{
+                    color:var(--blackColor);
+                    border:1px solid #111;
+                }
+            }
+        }
+
+    }
+    .homeImage{
+        margin:auto;
+        
+    }
+}
+@media screen and (min-width:520px){
+.home{
+    .secContainer{
+        .homeText{
+            .homeSpan{
+                font-size:18px;
+            }
+            .homeTitle{
+                font-size:35px;
+            }
+            .btn-group{
+                .btn{
+                    font-size:14px;
+                }
+            }
+        }
+        .homeImage{
+            max-width:85%;
+            transition:.3s ease;
+        }
+    }
+}
+}
+@media screen and (min-width:770px){
+.home{
+    padding-top:10rem;
+    .secContainer{
+        gap:2.4rem;
+        .homeText{
+            .homeSpan{
+                font-size:21px;
+            }
+            .homeTitle{
+                font-size:45px;
+            }
+            .btn-group{
+                margin-top:1rem;
+            }
+        }
+    }
+}
+}
+@media screen and (min-width:996px){
+.home{
+    padding-top:12rem;
+    .secContainer{
+        gap:3rem;
+        .homeText{
+            .homeSpan{
+                font-size:25px;
+            }
+            .homeTitle{
+                font-size:55px;
+            }
+            .btn-group{
+                .btn{
+                    font-size:16px;
+                    padding:1rem 2rem;
+                }
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,43 @@
+:root{
+    --primaryColor:#001524;
+    --secondaryColor:#ebe8fc;
+    --textColor:#a3a3a3;
+    --greyColor:#f4f4f4;
+    --whiteColor:#f5f4f4;
+    --blackColor:#434344;
+}
+.footer{
+    padding-top:4rem;
+    .footerContainer{
+        .footerMenuDiv{
+            padding:2rem;
+            background-color: var(--greyColor);
+            border-radius:10px;
+            gap:1.5rem;
+        .singleGrid{
+            .footerTitle{
+                display:block;
+                padding-bottom:.5rem;
+                font-size:16px;
+                color:var(--blackColor);
+                font-weight:700;
+            }
+            .footerui{
+                gap:.5rem;
+                .footerList{
+                    color:var(--textColor);
+                    &:hover{
+                        color:var(--textColor);
+                        transform: translateX(5px);
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+    .lowerDiv{
+        padding:1rem;
+        text-align:center;
+    }
+}
+}
